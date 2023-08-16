@@ -1,0 +1,101 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{3D7B51BB-6C27-4BE7-82F5-C769E53A532C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{77350936-3CF7-4B59-9466-0C57CD192A9A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{582FD82D-ED3F-40BF-A36F-623E6ED00BED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{AC22E6B7-E58C-46AC-BF05-695FF7BB7635}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.Services.ProductAPI", "Services\BtkAkademi.Services.ProductAPI\BtkAkademi.Services.ProductAPI.csproj", "{4EB0BD57-0824-46C3-8CE0-A7369499A4EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.Web", "FrontEnd\BtkAkademi.Web\BtkAkademi.Web.csproj", "{08F09076-7D44-4AA3-AACD-447869483916}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.Services.ShoppingCartAPI", "Services\BtkAkademi.Services.ShoppingCartAPI\BtkAkademi.Services.ShoppingCartAPI.csproj", "{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.MessageBus", "Integration\BtkAkademi.MessageBus\BtkAkademi.MessageBus.csproj", "{784F868C-AC47-4080-9C3E-3E82F7208977}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.Services.Identity", "Services\BtkAkademi.Services.Identity\BtkAkademi.Services.Identity.csproj", "{2366569D-0FD6-4C2D-AA54-9EB939679B01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.Services.CouponAPI", "Services\BtkAkademi.Services.CouponAPI\BtkAkademi.Services.CouponAPI.csproj", "{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.GatewaySolution", "Gateway\BtkAkademi.GatewaySolution\BtkAkademi.GatewaySolution.csproj", "{115D8C54-7EFB-45F4-A469-88D237877768}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BtkAkademi.OrderAPI", "Services\BtkAkademi.OrderAPI\BtkAkademi.OrderAPI.csproj", "{C293024E-D0BE-4099-BE22-E9A6F017D081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtkAkademi.Services.PaymentAPI", "Services\BtkAkademi.Services.PaymentAPI\BtkAkademi.Services.PaymentAPI.csproj", "{9650BBA1-243A-4DA6-8552-9636B4BD05B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentProcessor", "Payment\PaymentProcessor\PaymentProcessor.csproj", "{B5CFE1EC-6062-415D-8C4F-C00373B17FDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EB0BD57-0824-46C3-8CE0-A7369499A4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB0BD57-0824-46C3-8CE0-A7369499A4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB0BD57-0824-46C3-8CE0-A7369499A4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB0BD57-0824-46C3-8CE0-A7369499A4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F09076-7D44-4AA3-AACD-447869483916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F09076-7D44-4AA3-AACD-447869483916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F09076-7D44-4AA3-AACD-447869483916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F09076-7D44-4AA3-AACD-447869483916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{784F868C-AC47-4080-9C3E-3E82F7208977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{784F868C-AC47-4080-9C3E-3E82F7208977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{784F868C-AC47-4080-9C3E-3E82F7208977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{784F868C-AC47-4080-9C3E-3E82F7208977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2366569D-0FD6-4C2D-AA54-9EB939679B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2366569D-0FD6-4C2D-AA54-9EB939679B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2366569D-0FD6-4C2D-AA54-9EB939679B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2366569D-0FD6-4C2D-AA54-9EB939679B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115D8C54-7EFB-45F4-A469-88D237877768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115D8C54-7EFB-45F4-A469-88D237877768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115D8C54-7EFB-45F4-A469-88D237877768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115D8C54-7EFB-45F4-A469-88D237877768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C293024E-D0BE-4099-BE22-E9A6F017D081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C293024E-D0BE-4099-BE22-E9A6F017D081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C293024E-D0BE-4099-BE22-E9A6F017D081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C293024E-D0BE-4099-BE22-E9A6F017D081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9650BBA1-243A-4DA6-8552-9636B4BD05B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9650BBA1-243A-4DA6-8552-9636B4BD05B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9650BBA1-243A-4DA6-8552-9636B4BD05B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9650BBA1-243A-4DA6-8552-9636B4BD05B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5CFE1EC-6062-415D-8C4F-C00373B17FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5CFE1EC-6062-415D-8C4F-C00373B17FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5CFE1EC-6062-415D-8C4F-C00373B17FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5CFE1EC-6062-415D-8C4F-C00373B17FDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4EB0BD57-0824-46C3-8CE0-A7369499A4EA} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{08F09076-7D44-4AA3-AACD-447869483916} = {3D7B51BB-6C27-4BE7-82F5-C769E53A532C}
+		{DF366DA7-0DC7-4C5D-B28D-4E68DF6EE08D} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{784F868C-AC47-4080-9C3E-3E82F7208977} = {AC22E6B7-E58C-46AC-BF05-695FF7BB7635}
+		{2366569D-0FD6-4C2D-AA54-9EB939679B01} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{C7AA94FA-377A-43C8-A7AB-E57385CFE4CA} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{115D8C54-7EFB-45F4-A469-88D237877768} = {77350936-3CF7-4B59-9466-0C57CD192A9A}
+		{C293024E-D0BE-4099-BE22-E9A6F017D081} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{9650BBA1-243A-4DA6-8552-9636B4BD05B9} = {64D31FAF-0A3F-4933-B5E2-D0F74183B3EF}
+		{B5CFE1EC-6062-415D-8C4F-C00373B17FDA} = {582FD82D-ED3F-40BF-A36F-623E6ED00BED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {868D20AF-374A-4CEE-863F-EACFDAB9BFDA}
+	EndGlobalSection
+EndGlobal

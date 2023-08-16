@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ProductDto>
+<form>
+
+    <div class="container row">
+
+        @foreach (var product in Model)
+        {
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-0 my-3 border">
+                    <div class="card">
+                        <img src="~/Uploads/@product.ImageUrl" class="card-img-top" alt="@product.ImageUrl" style="max-width:100%; height:250px;">
+                        <div class="card-body">
+                            <h3 class="card-title text-success">@product.Name</h3>
+                            <span class="badge badge-light mb-2">@product.CategoryName</span>
+                            <p class="card-text">@Html.Raw(product.Description)</p>
+                            <div class="row">
+                                <div class="col-6 col-md-8 pt-1">
+                                    <span style="font-size:23px;">@string.Format("{0:c}", product.Price)</span>
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <a asp-action="Details" asp-route-productId="@product.ProductId" class="btn btn-success form-control">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</form>

@@ -1,0 +1,200 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*live chat*/
+
+.fixed-live-chat {
+    width: auto;
+    bottom: 10%;
+    right: 5%;
+    z-index: 100;
+}
+
+.live-chat .bg-light {
+    background: #EBEEF5;
+}
+
+.live-chat .chatbox {
+    position: relative;
+    color: #4584F6;
+    background-color: #fff;
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    line-height: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 8px;
+}
+
+    .live-chat .chatbox span {
+        font-size: 10px;
+        font-weight: 600;
+        color: #4584F6;
+        display: block;
+        text-transform: uppercase;
+    }
+
+.live-chat .close,
+.live-chat .close:hover {
+    font-size: 15px;
+    opacity: 1;
+    outline: none;
+}
+
+.live-chat .dropchat {
+    position: absolute;
+    min-width: 360px;
+    right: 0;
+    bottom: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: text;
+    display: none;
+    animation: show 333ms ease;
+}
+
+    .live-chat .dropchat.show {
+        display: block;
+    }
+
+    .live-chat .dropchat .card-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .live-chat .dropchat .card-body {
+        max-height: 300px; 
+        overflow-y: auto;
+        padding: 0.5rem;
+    }
+
+    .live-chat .dropchat .card-header img {
+        width: 25px;
+    }
+
+    .live-chat .dropchat .card-header h5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .live-chat .dropchat .typer {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+        .live-chat .dropchat .typer input[type="text"] {
+            width: 100%;
+            font-size: 13px;
+            padding: 1rem;
+            border: 0;
+            border-radius: 4px;
+        }
+
+            .live-chat .dropchat .typer input[type="text"]:focus {
+                outline: none;
+            }
+
+        .live-chat .dropchat .typer span[type="submit"] {
+            font-size: 20px;
+            position: absolute;
+            padding: 0.5rem;
+            cursor: pointer;
+            -webkit-appearance: inherit;
+        }
+
+    .live-chat .dropchat .list {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        line-height: 15px;
+        list-style: none;
+        padding: 0.5rem;
+    }
+
+        .live-chat .dropchat .list.revange {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: start;
+            justify-content: end;
+        }
+
+        .live-chat .dropchat .list img.chat-avater {
+            width: 25px;
+            padding-right: 5px;
+            padding-left: 0px;
+        }
+
+        .live-chat .dropchat .list.revange img.chat-avater {
+            width: 25px;
+            padding-right: 0px;
+            padding-left: 5px;
+        }
+
+        .live-chat .dropchat .list .chat-content {
+            width: 70%;
+            color: #333;
+            background: #fff;
+            padding: 0.225rem 0.525rem;
+            border-radius: .525rem;
+            box-shadow: 0 0 0.125rem .0125rem rgba(0,0,0,0.3);
+        }
+
+        .live-chat .dropchat .list.revange .chat-content {
+            color: #fff;
+            background: #4584F6;
+        }
+
+        .live-chat .dropchat .list:last-child {
+            border-bottom: 0;
+        }
+
+        .live-chat .dropchat .list p {
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .live-chat .dropchat .list span {
+            font-size: 9px;
+        }
+  
+    /*animation*/
+    @keyframes show {
+        0% {
+        opacity: 0;
+        transform: translate(0, 10%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0%)
+    }
+}

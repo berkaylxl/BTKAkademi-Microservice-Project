@@ -1,0 +1,39 @@
+﻿<script src="~/js/microsoft/signalr/dist/browser/signalr.min.js"></script>
+
+@{
+    var userName = User.Identity.Name;
+}
+	@if (User.Identity.IsAuthenticated)
+	{
+        
+     
+        <div class="fixed-live-chat position-fixed p-1">
+            <div class="live-chat position-relative">
+                <button type="button" class="chatbox"><i class="fas fa-comment-dots fa-flip-horizontal pl-1"></i> <span>Live Chat</span></button>
+                <div class="dropchat">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-header d-flex align-items-center justify-content-between bg-light">
+                            <h5 class="m-0">
+                               @* <img class="chat-avater" src="./img/logo.png" alt="">
+                                Chat with Dr.Jhon*@
+                                <span class="text-success">GLOBAL CHAT</span>
+                            </h5>
+                            <button type="button" class="close"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="card-body bg-light" id="messageBox">
+
+                          @*  messages*@
+
+                        </div>
+                        <div class="card-footer border p-0">
+                            <form action="#" class="typer">
+                                <input type="text"  class="message" placeholder="Write a Message...">
+                            <span type="submit" onclick="sendMessageHub('@userName')"   class="fas fa-paper-plane"></span>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	}
+
