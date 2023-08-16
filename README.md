@@ -4,5 +4,5 @@
 
 
 ## Global Chat eklendi
-https://github.com/berkaylxl/BTKAkademi-Microservice-Project/assets/59365403/cdad65c2-9021-40aa-ad59-e84909b783a5
+https://github.com/berkaylxl/BTKAkademi-Microservice-Project/assets/59365403/249c7595-81ff-44e2-ab0a-69508a75f435
 
